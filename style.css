@@ -1,0 +1,246 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins&display=swap');
+
+* {
+     box-sizing: border-box;
+ }
+
+ body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+ }
+
+.logo {
+    padding-top: 0.5em;
+    margin-top: 2em;
+    width: 15em;
+    height: 3.8em;
+}
+main {
+    background: hsl(193,100%,96%) url(images/bg-hero-desktop.svg);
+    padding-bottom: 50px;
+}
+
+.content-centre {
+    align-self: center;
+}
+
+ header {
+     display: flex;
+     justify-content: space-between;
+     margin:0 3em;
+ }
+
+ .main-content {
+     display: flex;
+     justify-content: space-between;
+     margin: 0 3em;
+ }
+
+ .btn__try {
+     margin: 3em 0;
+     width: 12em;
+     height: 3.5em;
+     border: none;
+     border-radius: 64px;
+     box-shadow: 0 3px 5px rgba(0,0,0,0.4);
+     font-weight: bold;
+     background: white;
+     color: hsl(192,100%,9%);
+ }
+
+ .btn-get-start {
+     color: white;
+     background: hsl(322,100%,66%);
+     border: none;
+     border-radius: 64px;
+     box-shadow: 0 3px 5px rgba(0,0,0,0.6);
+     height: 4em;
+     width: 20em;
+     font-weight: bold;
+ }
+
+ .btn-centre {
+     position: absolute;
+     left: 50%;
+     top: 67%;
+     transform: translate(-50%, -50%);
+ }
+
+ h2, h3 {
+     color: hsl(192,100%,9%);
+     font-family: 'Poppins', sans-serif;
+ }
+ 
+ section {
+     display: flex;
+     justify-content: space-between;
+     margin: 2.5em 5em 2px;
+     padding: 1.5em 4.5em;
+     border-radius: 17px;
+     box-shadow: 0 3px 5px rgba(0,0,0,0.1),0 -3px 5px rgba(0,0,0,0.1);
+ }
+
+ .section-text {
+    margin-right:5em;
+ }
+
+ .section, .nav-tag {
+     align-self: center;
+ }
+
+ .white-logo {
+     filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+ }
+
+ .build {
+    box-shadow: 0 3px 5px rgba(0,0,0,0.6);
+    width: fit-content;
+    padding: 2em 5em;
+    border-radius: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    top: 100px;
+    flex: 1;
+    height: 12em;
+    background:white;
+ }
+
+ footer {
+     background: hsl(192,100%,9%);
+     color: #fff;
+     display: flex;
+     justify-content: space-between;
+     padding: 9em 3em 1.5em;
+ }
+
+ .footer-icon {
+     display: inline-flex;
+     padding-right: 0.7em;
+ }
+
+ li,a {
+     margin-bottom: 1em;
+     list-style-type: none;
+     color: #fff;
+     text-decoration: none;
+ }
+
+ .socials {
+     display: flex;
+     justify-content: space-around;
+     align-items: flex-start;
+     padding-bottom: 5em;
+     filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(10000%) contrast(80%);
+ }
+
+ .btn-get-start:hover, .btn__try:hover {
+     opacity: 80%;
+ }
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width:700px) {
+    .btn__try {
+        margin: 3em 0;
+        width: 12em;
+        height: 3.5em;
+        border-radius: 64px;
+    }
+
+    .logo {
+        padding-top: 0.5em;
+        margin-top: 2em;
+        width: 7em;
+        height: 3em;
+    }
+
+    .main-content {
+        margin: 0 0.5em;
+        display: block;
+        text-align: center;
+    }
+
+    header {
+        margin:0 1em;
+    }
+
+    .build {
+        width: 20em;
+        padding: 0;
+        margin: 0;
+        border-radius: 25px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        /* top: 100px; */
+        flex: 1;
+        height: 15em;
+        font-size: small;
+        text-align: center;
+     }
+
+    .build-pic {
+        width: 18em;
+    }
+
+    .content-centre {
+        margin-bottom: 2em;
+    }
+    
+    section {
+        display: grid;
+        margin: 2.5em 1em 2px;
+        padding: 1.5em 1em;
+        text-align: center;
+        grid-template-areas: 
+        "photo"
+        "text";
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr 1fr;
+    }
+
+    .text {
+        grid-area: "text";
+        grid-row: 2/3;
+        text-align: center;
+        margin: 0;
+    }
+
+    .photo {
+        width: 18em;
+        margin: 0;
+        padding: 0;
+        grid-area: "photo";
+        grid-row: 1/2;
+    }
+
+    .btn-centre {
+        position: absolute;
+      
+    }
+
+    footer {
+        display: block;
+    }
+
+    .footer-icon {
+        
+    }
+   
+    li,a {
+        margin-bottom: 1em;
+    }
+   
+    .socials {
+        margin: auto;
+        padding-bottom: 3em;
+    }
+}
