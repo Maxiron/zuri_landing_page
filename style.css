@@ -229,10 +229,13 @@ a:hover {
 
     footer {
         display: block;
+        padding-left: 01em;    
     }
 
-    .footer-icon {
-        
+    .fa {
+        width: 15px;
+        padding: 0;
+        margin: 0;
     }
    
     li,a {
@@ -242,5 +245,12 @@ a:hover {
     .socials {
         margin: auto;
         padding-bottom: 3em;
+    }
+
+    .copyright {
+        font-size: 12px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
     }
 }
